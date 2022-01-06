@@ -1,0 +1,18 @@
+1 . Note
+* Thêm router và xây dựng cấu trúc thư mục
+    - pages là để hold các page chính
+    - components folder là để tạo ra các component con để import vào trong các page
+    - Ở các app lên sẽ xây dựng theo các feature là tên các tính năng sẽ được đặt cho thư mục và trong đó sẽ gồm các
+    containers và các component
+    - VD : places/(subs : components, containers, assets)
+    - Cài đặt router package :
+        + npm install react-router-dom@5 --save-exact ( React Router Dom ver 5 )
+        + 5 tiền tố quan trọng của router : BrowserRouter, Switch, Route, Switch, Redirect
+            - BrowserRouter : Component bao ngoài giữa các router
+            - Switch : Thực hiện việc chuyển đổi giữa các router với nhau
+            - Route : dùng để khai báo các router con với các thuộc tính
+                + path : đường dẫn trên browser dùng để di chuyển đến component
+                + component : Tên component view sẽ render
+                + extract : sẽ chuyển hướng đến chỉ khi đúng với path đc khai báo
+            - Redirect : Khi Router đc khai báo sai thì sẽ chuyển hướng về đường dẫn
+            được khai báo trong redirect
